@@ -1,4 +1,4 @@
-#include "printf.h"
+#include "main.h"
 
 /**
  * p_string - print type string to stdout
@@ -14,7 +14,7 @@ int p_string(va_list s)
 
 	_string = va_arg(s, char *);
 	if (_string == NULL)
-		_stringn = "(null)";
+		_string = "(null)";
 	while (_string[i])
 	{
 		_putchar(_string[i]);

@@ -1,4 +1,4 @@
-#include "printf.h"
+#include "main.h"
 
 /**
  * p_char - print the character c to stdout

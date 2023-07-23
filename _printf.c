@@ -1,4 +1,4 @@
-#include "printf.h"
+#include "main.h"
 
 /**
  * find_function - choose the right function
@@ -12,7 +12,7 @@ int (*find_function(const char *format))(va_list)
 	code_f find_f[] = {
 		{"c", p_char},
 		{"s", p_string},
-		{NULL, Null},
+		{NULL, NULL}
 	};
 
 	while (find_f[i].sp)
@@ -41,9 +41,9 @@ int _printf(const char *format, ...)
 	if (format == NULL)
 		return (-1);
 	va_start(ap, format);
-	while (format[i]
+	while (format[i])
 	{
-		while (format[i] != '%' && format[i]
+		while (format[i] != '%' && format[i])
 		{
 			_putchar(format[i]);
 			n_printed++;
@@ -60,7 +60,7 @@ int _printf(const char *format, ...)
 		}
 		if (!format[i + 1])
 			return (-1);
-		_putchar(format[i];
+		_putchar(format[i]);
 		n_printed++;
 		if (format[i + 1] == '%')
 			i += 2;

@@ -1,5 +1,5 @@
-#ifndef printf_h
-#define printf_h
+#ifndef main_h
+#define main_h
 
 #include <stdio.h>
 #include <stdlib.h>
