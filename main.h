@@ -10,6 +10,8 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 int p_char(va_list c);
 int p_string(va_list s);
+int print_int(va_list i);
+int print_dec(va_list d);
 
 /**
  * struct code_format - Struct format
