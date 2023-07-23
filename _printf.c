@@ -12,6 +12,8 @@ int (*find_function(const char *format))(va_list)
 	code_f find_f[] = {
 		{"c", p_char},
 		{"s", p_string},
+		{"i", print_int},
+		{"d", print_dec}
 		{NULL, NULL}
 	};
 
