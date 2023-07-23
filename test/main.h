@@ -23,3 +23,4 @@ typedef struct code_format
 	int (*f)(va_list);
 } code_f;
 
+#endif
