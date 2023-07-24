@@ -14,6 +14,7 @@ int (*find_function(const char *format))(va_list)
 		{"s", p_string},
 		{"i", p_int},
 		{"d", p_dec},
+		{"b", p_bin},
 		{NULL, NULL}
 	};
 
