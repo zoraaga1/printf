@@ -24,6 +24,8 @@ int p_bin(va_list b)
 		}
 		p = 1;
 		for (i = 1; i <= length - 1; i++)
+			p *= 2;
+		for (i = 1; i <= length; i++)
 		{
 			digit = n / p;
 			_putchar(digit + '0');
