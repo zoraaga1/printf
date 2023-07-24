@@ -18,6 +18,7 @@ int p_octal(va_list o);
 int p_x(va_list x);
 int p_X(va_list X);
 int p_S(va_list S);
+int p_rev(va_list r);
 
 /**
  * struct code_format - Struct format
