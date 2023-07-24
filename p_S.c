@@ -1,34 +1,33 @@
 #include "main.h"
 
 /**
- * p_S - print a string with special formatting
- * @s: string to be printed
- *
- * Return: Number of characters printed
+ * p_S - print the input string with special formatting for non-printable characters
+ * @s: the input string
+ * Return: number of characters printed
  */
 int p_S(va_list s)
 {
-	char *str = va_arg(s, char *);
-	int count = 0;
+    char *str = va_arg(s, char *);
+    int s_printed = 0;
 
-	if (str == NULL)
-		str = "(null)";
+    if (str == NULL)
+        str = "(null)";
 
-	while (*str)
-	{
-		if (*str < 32 || *str >= 127)
-		{
-			_putchar('\\');
-			_putchar('x');
-			count += 2 + p_hex(*str, 1);
-		}
-		else
-		{
-			_putchar(*str);
-			count++;
-		}
-		str++;
-	}
+    while (*str)
+    {
+        if (*str < 32 || *str >= 127)
+        {
+            s_printed += _putchar('\\');
+            s_printed += _putchar('x');
+            s_printed += _putchar('0' + ((*str >> 4) & 0xF));
+            s_printed += _putchar('0' + (*str & 0xF));
+        }
+        else
+        {
+            s_printed += _putchar(*str);
+        }
+        str++;
+    }
 
-	return (count);
+    return (s_printed);
 }
