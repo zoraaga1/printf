@@ -12,10 +12,7 @@ int p_char(va_list c);
 int p_string(va_list s);
 int p_int(va_list i);
 int p_dec(va_list d);
-int p_unsig(va_list u);
-int p_octal(va_list o);
-int p_x(va_list x);
-int p_X(va_list X);
+int p_bin(va_list b);
 /**
  * struct code_format - Struct format
  * @sp: Specifiers

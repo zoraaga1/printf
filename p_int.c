@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* print_int - function that prints an integer
+* p_int - function that prints an integer
 * @i: integer to print
 * Descriptions: prints digit with _putchar
 * Return: size the output text
