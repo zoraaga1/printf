@@ -5,9 +5,9 @@
  * @s: the input string
  * Return: number of characters printed
  */
-int p_S(va_list s)
+int p_S(va_list S)
 {
-    char *str = va_arg(s, char *);
+    char *str = va_arg(S, char *);
     int s_printed = 0;
 
     if (str == NULL)
