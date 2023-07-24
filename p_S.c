@@ -39,7 +39,7 @@ int p_S(va_list S)
         else
         {
             p_hex_char(*str);
-            count += 4; // Account for the extra characters printed in hexadecimal format
+            count += 4; /*Account for the extra characters printed in hexadecimal format*/
         }
         str++;
     }

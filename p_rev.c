@@ -21,7 +21,7 @@ int p_rev(va_list r)
 	for (i -= 1; i >= 0; i--)
 	{
 		_putchar (str[i]);
-		c_printed;
+		c_printed++;
 	}
 	return (c_printed);
 }
