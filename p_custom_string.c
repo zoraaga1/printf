@@ -5,7 +5,7 @@
  * @s: the input string
  * Return: number of characters printed
  */
-int p_custom_string(va_list s)
+int p_custom_string(va_list S)
 {
 	char *str = va_arg(s, char *);
 	int s_printed = 0;
