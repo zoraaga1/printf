@@ -11,7 +11,7 @@ int p_rev(va_list r)
 {
 	char *str;
 	int i = 0;
-	int j = 0;
+	int c_printed = 0;
 
 	str = va_arg(r, char *);
 	if (str == NULL)
@@ -21,7 +21,7 @@ int p_rev(va_list r)
 	for (i -= 1; i >= 0; i--)
 	{
 		_putchar (str[i]);
-		j++;
+		c_printed;
 	}
 	return (c_printed);
 }
