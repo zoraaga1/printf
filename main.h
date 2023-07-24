@@ -17,6 +17,7 @@ int p_unsig(va_list u);
 int p_octal(va_list o);
 int p_x(va_list x);
 int p_X(va_list X);
+int p_S(va_list s);
 
 /**
  * struct code_format - Struct format
