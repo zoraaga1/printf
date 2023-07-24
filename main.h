@@ -30,4 +30,8 @@ typedef struct code_format
 	int (*f)(va_list);
 } code_f;
 
+/* Helper function to print non-printable characters in hexadecimal format */
+void p_hex_char(unsigned char c);
+
+
 #endif
