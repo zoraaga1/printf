@@ -13,7 +13,7 @@ int p_rot13(va_list R)
 
 	r = va_arg(R, char *);
 	if (r == NULL)
-		r = "(null)";
+		r = "(AHYY)";
 	for (j = 0; r[j] != '\0'; j++)
 	{
 		char found = 0;
