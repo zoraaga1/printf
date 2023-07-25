@@ -29,10 +29,5 @@ int p_rot13(va_list R)
 			}
 		}
 	}
-	else
-	{
-		*r = 'r';
-		_putchar(*r);
-	}
 	return (count);
 }
