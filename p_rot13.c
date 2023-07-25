@@ -14,20 +14,266 @@ int p_rot13(va_list R)
 	r = va_arg(R, char *);
 	if (r == NULL)
 		r = "(null)";
-	if ((*r > 64 && *r < 91) || (*r > 96 && *r < 123))
+	for (j = 0; r[j] != '\0'; j++)
 	{
-		for (j = 0; r[j] != '\0'; j++)
+		char found = 0;
+		for (i = 0; i < 52; i++)
 		{
-			for (i = 0; i < 52; i++)
+			if (r[j] == inpufor (j = 0; r[j] != '\0'; j++)
+					{
+							char found = 0;
+									for (i = 0; i < 52; i++)
+									{
+												if (r[j] == input[i])
+												{
+																_putchar(output[i]);
+																				count++;
+																								found = 1;
+																												break;
+																												}
+																												}
+																														// Print the character as it is if not found in the rot13 mapping
+																														// 		if (!found)
+																														// 				{
+																														// 							_putchar(r[j]);
+																														//for (j = 0; r[j] != '\0'; j++)
+																														//	{
+																														//			char found = 0;
+																														//					for (i = 0; i < 52; i++)
+																														//							{
+																														//										if (r[j] == input[i])
+																														//													{
+																														//																	_putchar(output[i]);
+																														//																					count++;
+																														//																									found = 1;
+																														//																													break;
+																														//																																}
+																														//																																		}
+																														//																																				// Print the character as it is if not found in the rot13 mapping
+																														//																																						if (!found)
+																														//																																								{
+																														//																																											_putchar(r[j]);
+																														//																																														count++;
+																														//																																																}
+																														//						for (j = 0; r[j] != '\0'; j++)
+																														//							{
+																														//									char found = 0;
+																														//											for (i = 0; i < 52; i++)
+																														//													{
+																														//																if (r[j] == input[i])
+																														//																			{
+																														//																							_putchar(output[i]);
+																														//																											count++;
+																														//																															found = 1;
+																														//																																			break;
+																														//																																						}
+																														//																																								}
+																														//																																										// Print the character as it is if not found in the rot13 mapping
+																														//																																												if (!found)
+																														//																																														{
+																														//																																																	_putchar(r[j]);
+																														//																																																				count++;
+																														//																																																						}
+																														//																								for (j = 0; r[j] != '\0'; j++)
+																														//																									{
+																														//																											char found = 0;
+																														//																													for (i = 0; i < 52; i++)
+																														//																															{
+																														//																																		if (r[j] == input[i])
+																														//																																					{
+																														//																																									_putchar(output[i]);
+																														//																																													count++;
+																														//																																																	found = 1;
+																														//																																																					break;
+																														//																																																								}
+																														//																																																										}
+																														//																																																												// Print the character as it is if not found in the rot13 mapping
+																														//																																																														if (!found)
+																														//																																																																{
+																														//																																																																			_putchar(r[j]);
+																														//																																																																						count++;
+																														//																																																																								}
+																														//																																																																									}
+			for (j = 0; r[j] != '\0'; j++)
 			{
-				if (r[j] == input[i])
-				{
-					_putchar(output[i]);
-					count++;
-					break;
-				}
-			}
-		}
-	}
-	return (count);
-}
+						char found = 0;
+								for (i = 0; i < 52; i++)
+								{
+												if (r[j] == input[i])
+												{
+																	_putchar(output[i]);
+																					count++;
+																									found = 1;
+																													break;
+												}
+								}
+										// Print the character as it is if not found in the rot13 mapping
+										// 	for (j = 0; r[j] != '\0'; j++)
+										// 		{
+										// 				char found = 0;
+										// 						for (i = 0; i < 52; i++)
+										// 								{
+										// 											if (r[j] == input[i])
+										// 														{
+										// 																		_putchar(output[i]);
+										// 																						count++;
+										// 																										found = 1;
+										// 																														break;
+										// 																																	}
+										// 																																			}
+										// 																																					// Print the character as it is if not found in the rot13 mapping
+										// 																																							if (!found)
+										// 																																									{
+										// 																																												_putchar(r[j]);
+										// 																																															count++;
+										// 																																			for (j = 0; r[j] != '\0'; j++)
+										// 																																				{
+										// 																																						char found = 0;
+										// 																																								for (i = 0; i < 52; i++)
+										// 																																										{
+										// 																																													if (r[j] == input[i])
+										// 																																																{
+										// 																																																				_putchar(output[i]);
+										// 																																																								count++;
+										// 																																																												found = 1;
+										// 																																																																break;
+										// 																																																																			}
+										// 																																																																					}
+										// 																																																																							// Print the character as it is if not found in the rot13 mapping
+										// 																																																																									if (!found)
+										// 																																																																											{
+										// 																																																																														_putchar(r[j]);
+										// 																																																																																	count++;
+										// 																																																																																			}
+										// 																																																																									for (j = 0; r[j] != '\0'; j++)
+										// 																																																																										{
+										// 																																																																												char found = 0;
+										// 																																																																														for (i = 0; i < 52; i++)
+										// 																																																																																{
+										// 																																																																																			if (r[j] == input[i])
+										// 																																																																																						{
+										// 																																																																																										_putchar(output[i]);
+										// 																																																																																														count++;
+										// 																																																																																																		found = 1;
+										// 																																																																																																						break;
+										// 																																																																																																									}
+										// 																																																																																																											}
+										// 																																																																																																													// Print the character as it is if not found in the rot13 mapping
+										// 																																																																																																															if (!found)
+										// 																																																																																																																	{
+										// 																																																																																																																				_putchar(r[j]);
+										// 																																																																																																																							count++;
+										// 																																																																																																																									}
+										// 																																																																																																																										}
+										// 																																																		for (j = 0; r[j] != '\0'; j++)
+										// 																																																			{
+										// 																																																					char found = 0;
+										// 																																																							for (i = 0; i < 52; i++)
+										// 																																																									{
+										// 																																																												if (r[j] == input[i])
+										// 																																																															{
+										// 																																																																			_putchar(output[i]);
+										// 																																																																							count++;
+										// 																																																																											found = 1;
+										// 																																																																															break;
+										// 																																																																																		}
+										// 																																																																																				}
+										// 																																																																																						// Print the character as it is if not found in the rot13 mapping
+										// 																																																																																								if (!found)
+										// 																																																																																										{
+										// 																																																																																													_putchar(r[j]);
+										// 																																																																																																count++;
+										// 																																																																																																		}
+										// 																																																																																																			}
+										// 				for (j = 0; r[j] != '\0'; j++)
+										// 					{
+										// 							char found = 0;
+										// 									for (i = 0; i < 52; i++)
+										// 											{
+										// 														if (r[j] == input[i])
+										// 																	{
+										// 																					_putchar(output[i]);
+										// 																									count++;
+										// 																													found = 1;
+										// 																																	break;
+										// 																																				}
+										// 																																						}
+										// 																																								// Print the character as it is if not found in the rot13 mapping
+										// 																																										if (!found)
+										// 																																												{
+										// 																																															_putchar(r[j]);
+										// 																																																		count++;
+										// 																																															for (j = 0; r[j] != '\0'; j++)
+										// 																																																{
+										// 																																																		char found = 0;
+										// 																																																				for (i = 0; i < 52; i++)
+										// 																																																						{
+										// 																																																									if (r[j] == input[i])
+										// 																																																												{
+										// 																																																																_putchar(output[i]);
+										// 																																																																				count++;
+										// 																																																																								found = 1;
+										// 																																																																												break;
+										// 																																																																															}
+										// 																																																																																	}
+										// 																																																																																			// Print the character as it is if not found in the rot13 mapping
+										// 																																																																																					if (!found)
+										// 																																																																																							{
+										// 																																																																																										_putchar(r[j]);
+										// 																																																																																													count++;
+										// 																																																																																															}
+										// 																																																																																																}
+										/for (j = 0; r[j] != '\0'; j++)
+										{
+													char found = 0;
+															for (i = 0; i < 52; i++)
+															{
+																			if (r[j] == input[i])
+																			{
+																								_putchar(output[i]);
+																												count++;
+																																found = 1;
+																																				break;
+																			}
+															}
+																	// Print the character as it is if not found in the rot13 mapping
+																	// 		if (!found)
+																	// 				{
+										for (j = 0; r[j] != '\0'; j++)
+										{
+													char found = 0;
+															for (i = 0; i < 52; i++)
+															{
+																			if (r[j] == input[i])
+																			{
+																								_putchar(output[i]);
+																												count++;
+																																found = 1;
+																																				break;
+																			}
+															}
+																	// Print the character as it is if not found in the rot13 mapping
+																	// 		if (!found)
+																	// 				{
+										for (j = 0; r[j] != '\0'; j++)
+										{
+													char found = 0;
+															for (i = 0; i < 52; i++)
+															{
+																			if (r[j] == input[i])
+																			{
+																								_putchar(output[i]);
+																												count++;
+																																found = 1;
+																																				break;
+																			}
+															}
+																	// Print the character as it is if not found in the rot13 mapping
+																	// 		if (!found)
+																	// 				{
+																	// 							_putchar(r[j]);
+																	// 										count++;
+																	// 												}
+																	// 													}
+																	// 														return (count);
+																	// 														}
