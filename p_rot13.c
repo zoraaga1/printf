@@ -14,17 +14,25 @@ int p_rot13(va_list R)
 	r = va_arg(R, char *);
 	if (r == NULL)
 		r = "(null)";
-	for (j = 0; r[j] != '\0'; j++)
+	if((*r > 64 && *r < 91) || (*r > 96 && *r < 123))
 	{
-		for (i = 0; input[i] != '\0'; i++)
+		for (j = 0; r[j] != '\0'; j++)
 		{
-			if (r[j] == input[i])
+			for (i = 0; i < 52; i++)
 			{
-				_putchar(output[i]);
-				count++;
-				break;
+				if (r[j] == input[i])
+				{
+					_putchar(output[i]);
+					count++;
+					break;
+				}
 			}
 		}
+	}
+	else
+	{
+		*r = 'r';
+		_putchar(*r);
 	}
 	return (count);
 }
