@@ -8,7 +8,6 @@ int p_rot13(va_list R)
 {
 	int j, i, count = 0;
 	char *r;
-	int out;
 	char input[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz";
 	char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLM nopqrstuvwxyzabcdefghijklm";
 
