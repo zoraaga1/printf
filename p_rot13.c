@@ -9,13 +9,13 @@ int p_rot13(va_list R)
 	int j, i, count = 0;
 	char *r;
 	int out;
-	char input[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz!#$%&'()*+,-./";
-	char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLM nopqrstuvwxyzabcdefghijklm!#$%&'()*+,-./";
+	char input[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz";
+	char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLM nopqrstuvwxyzabcdefghijklm";
 
 	r = va_arg(R, char *);
 	if (r == NULL)
 		r = "(null)";
-	if((*r > 64 && *r < 91) || (*r > 96 && *r < 123))
+	if ((*r > 64 && *r < 91) || (*r > 96 && *r < 123))
 	{
 		for (j = 0; r[j] != '\0'; j++)
 		{
@@ -29,11 +29,6 @@ int p_rot13(va_list R)
 				}
 			}
 		}
-	}
-	else
-	{	
-		out = atoi(r);
-		_putchar(out);
 	}
 	return (count);
 }
