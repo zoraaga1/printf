@@ -20,6 +20,7 @@ int p_X(va_list X);
 int p_S(va_list S);
 int p_rev(va_list r);
 int p_rot13(va_list R);
+int p_ptr(va_list ap);
 /**
  * struct code_format - Struct format
  * @sp: Specifiers
