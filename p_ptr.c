@@ -6,30 +6,28 @@
  *
  * Return: number of charachters printed
  */
-int p_ptr(va_list ap)
+int p_ptr(va_list p)
 {
-	void *ptr = va_arg(ap, void *);
-    /*Assuming a 64-bit system for this example*/
-	unsigned long long address = (unsigned long long)ptr;
+	unsigned long address = (unsigned long )p;
 	char hex_digits[] = "0123456789abcdef";
 	int i;
 
 	/*Calculate the hexadecimal representation of the pointer's address*/
-	char hex_address[sizeof(unsigned long long) * 2 + 3];
+	char hex_address[sizeof(unsigned long) * 2 + 3];
 	hex_address[0] = '0';
 	hex_address[1] = 'x';
-	hex_address[sizeof(unsigned long long) * 2 + 2] = '\0';
-	for (i = sizeof(unsigned long long) * 2 + 1; i >= 2; i--)
-    {
-        hex_address[i] = hex_digits[address & 0xF];
-        address >>= 4;
-    }
-    /*Print the hexadecimal address*/
-    i = 0;
-    while (hex_address[i] != '\0')
-    {
-        _putchar(hex_address[i]);
-        i++;
-    }
-    return i;
+	hex_address[sizeof(unsigned long) * 2 + 2] = '\0';
+	for (i = sizeof(unsigned long) * 2 + 1; i >= 2; i--)
+    	{
+        	hex_address[i] = hex_digits[address & 0xF];
+        	address >>= 4;
+    	}
+	/*Print the hexadecimal address*/
+	i = 0;
+	while (hex_address[i] != '\0')
+	{
+		_putchar(hex_address[i]);
+        	i++;
+	}
+	return i;
 }
