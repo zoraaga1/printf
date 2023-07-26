@@ -17,6 +17,7 @@ int p_rot13(va_list R)
 	for (j = 0; r[j] != '\0'; j++)
 	{
 		char found = 0;
+
 		for (i = 0; i < 52; i++)
 		{
 			if (r[j] == input[i])
